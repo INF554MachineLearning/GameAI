@@ -1,6 +1,7 @@
 # GameAI
 Advanced topics in AI
 
+
 # Task week1
 1.Learn fundamental elements of (deep) reinforcement learning. <br>
 a. David Silver, (Reinforcement Learning）, 2015, slides：goo.gl/UqaxlO，video：goo.gl/7BVRkT  <br>
@@ -11,6 +12,10 @@ blog:
 a. https://medium.com/intelligentunit/conquering-openai-retro-contest-2-demystifying-rainbow-baseline-9d8dd258e74b <br>
 b. https://zhuanlan.zhihu.com/p/35437729 <br>
 c. https://zhuanlan.zhihu.com/p/39638134 <br>
+
+Lecture: <br>
+Li Fei-Fei's lecture on deep reinforcement learning at Stanford (64 minutes): https://www.youtube.com/watch?v=lvoHnicueoE 
+
 
 2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.
 
