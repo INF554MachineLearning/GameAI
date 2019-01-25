@@ -2,7 +2,7 @@
 Advanced topics in AI
 
 # Task week1
-1.Learn fundamental elements of (deep) reinforcement learning.//
+1.Learn fundamental elements of (deep) reinforcement learning. \\
 a. David Silver, (Reinforcement Learning）, 2015, slides：goo.gl/UqaxlO，video：goo.gl/7BVRkT //
 b. Sergey Levine, John Schulman and Chelsea Finn, CS 294:（Deep Reinforcement Learning）, CS 294 Deep Reinforcement Learning, Spring 2017 // 
 c. David Silver, 深度强化学习（Deep Reinforcement Learning）, ICML 2016 //
