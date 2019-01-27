@@ -18,7 +18,7 @@ Li Fei-Fei's lecture on deep reinforcement learning at Stanford (64 minutes): ht
 Open code: <br>
 Deep Q Learning with Atari© Space Invaders© <br>
 https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Space%20Invaders/DQN%20Atari%20Space%20Invaders.ipynb
-闻剑：卡在了retro.make(game='SpaceInvaders-Atari2600')这里。希望能找到添加游戏的方法
+<br>闻剑：卡在了retro.make(game='SpaceInvaders-Atari2600')这里。希望能找到添加游戏的方法
 
 2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.
 
