@@ -6,8 +6,9 @@ Advanced topics in AI
 a. David Silver, (Reinforcement Learning）, 2015, slides：goo.gl/UqaxlO，video：goo.gl/7BVRkT  <br>
 b. Sergey Levine, John Schulman and Chelsea Finn, CS 294:（Deep Reinforcement Learning）, CS 294 Deep Reinforcement Learning, Spring 2017 <br>
 c. David Silver, 深度强化学习（Deep Reinforcement Learning）, ICML 2016 <br>
+d. Vincent Francois-Lavet et al, *An Introduction to Deep Reinforcement Learning*, 140 pages, https://arxiv.org/abs/1811.12560 <br>
 
-blog:
+blog:<br>
 a. https://medium.com/intelligentunit/conquering-openai-retro-contest-2-demystifying-rainbow-baseline-9d8dd258e74b <br>
 b. https://zhuanlan.zhihu.com/p/35437729 <br>
 c. https://zhuanlan.zhihu.com/p/39638134 <br>
