@@ -20,7 +20,13 @@ Open code: <br>
 Deep Q Learning with Atari© Space Invaders© <br>
 https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Space%20Invaders/DQN%20Atari%20Space%20Invaders.ipynb
 <br>Jian：卡在了retro.make(game='SpaceInvaders-Atari2600')这里。希望能找到添加游戏的方法
-<BR>Problem solved by downloading atari file accoding to the blog: https://github.com/openai/retro/issues/53#issuecomment-399648032 <BR>Download atari .bin file from http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html
+<BR>Problem solved by downloading atari file accoding to the blog: https://github.com/openai/retro/issues/53#issuecomment-399648032 <BR>Download atari .bin file from http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html <BR>
+ <BR>
+ ViZDoom<BR>
+ In the same directory, there are other codes with ViZDoom, another video game framework for AI development: <BR>
+ https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb <BR>
+ Comparaison between Gym Retro and ViZDoom? <BR>
+ 
 
 2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.
 
