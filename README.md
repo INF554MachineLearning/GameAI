@@ -28,5 +28,15 @@ https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master
  Comparaison between Gym Retro and ViZDoom? <BR>
  
 
-2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.
+2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.<BR>
+ <BR>
+  Examples of last year's projects: <br>
+    * Snake <br>
+    * Cleaning agent <br>
+    * Connect Four <br>
+    * Hyperparameter tuning with RL <br>
+    * un jeu de casino <br>
+    * Pac-Man <br>
+    * Supply chain optimization <br>
+  
 
