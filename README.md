@@ -27,7 +27,9 @@ https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master
  https://github.com/simoninithomas/Deep_reinforcement_learning_Course/blob/master/Deep%20Q%20Learning/Doom/Deep%20Q%20learning%20with%20Doom.ipynb <BR>
  Comparaison between Gym Retro and ViZDoom? <BR>
   
-  https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2
+  https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2 <BR>
+ 
+ https://simoninithomas.github.io/Deep_reinforcement_learning_Course/#syllabus
  
 
 2.Ask prof that can we use OpenAi Gym Retro, if yes, install and familarize this environement.<BR>
