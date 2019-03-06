@@ -83,6 +83,12 @@ class AgentDQN:
         self.saver = tf.train.Saver()
 
     def get_state_window(self, state, window_size = (8,4)):
+        '''
+        This is to retrun the window in front of Mario
+        :param state:
+        :param window_size:
+        :return:
+        '''
         if window_size == None:
             window_size = self.window_size
         # To get the window in front of Mario
@@ -90,13 +96,28 @@ class AgentDQN:
             y, x = get_mario_position(state)
         except MarioPositionNotFound:
             return np.zeros(window_size)
+        # The following condition block is to handle the situation when Mario's position is too high or too low that the window go out of the border of the state
+        if y-(window_size[0]-2) >= 0 and y <= 10: # in the normal region
+            front_window = state[y-(window_size[0]-2)+1:y+3, x+1:x+window_size[1]+1]
+        elif y-(window_size[0]-2) < 0: # too high, add zeros on top of the window
+            zero_row = [0] * 16
+            zero_rows = np.stack([zero_row] * (window_size[0] - 3), axis=0)
+            state = np.concatenate((zero_rows, state), axis=0)  # Pad zeros on top
+            front_window = state[y - (window_size[0] - 2) + 1 + 5:y + 3 + 5, x + 1:x + window_size[1] + 1]
 
-        if y-(window_size[0]-2) >= 0:
-            front_window = state[y-(window_size[0]-2):y+2, x+1:x+window_size[1]+1]
+            #front_window = np.zeros(window_size)
+            #front_window[-(y+1):,:] = state[0:y+1, x+1:x+window_size[1]+1]  # The part within state
+            #front_window[0:window_size[0]-2-(y+1), :] = np.zeros((window_size[0]-2-(y+1), window_size[1])) # The part outside the state
+        elif y>10:
+            zero_rows = np.stack(([0]*16, [0]*16), axis=0)
+            state = np.concatenate((state, zero_rows), axis=0)
+            front_window = state[y - (window_size[0] - 2) + 1:y + 3, x + 1:x + window_size[1] + 1]
+            #front_window = np.zeros(window_size)
+            #front_window[0:window_size[0]-2-(12-y), :] = state[y-(window_size[0]-2):, x+1:x+window_size[1]+1] # The part within state
+            #front_window[window_size[0]-2+(12-y):, :] = np.zeros((y-10, window_size[1])) # The part outside the state
         else:
-            front_window = np.zeros(window_size)
-            front_window[-(y+1):,:] = state[0:y+1, x+1:x+window_size[1]+1]
-            front_window[0:window_size[0]-2-(y+1), :] = np.zeros((window_size[0]-2-(y+1), window_size[1]))
+            raise Exception('error from get_state_window')
+
         return front_window
 
 
