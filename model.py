@@ -2,8 +2,7 @@ import tensorflow as tf
 from collections import deque
 import numpy as np
 
-
-class Memory:
+class Memory():
     def __init__(self, max_size):
         self.buffer = deque(maxlen=max_size)
 
@@ -18,7 +17,6 @@ class Memory:
 
         return [self.buffer[i] for i in index]
 
-
 class DQNetwork:
     def __init__(self, state_size, action_size, learning_rate, name='DQNetwork'):
         self.state_size = state_size
@@ -32,6 +30,7 @@ class DQNetwork:
             # Remember that target_Q is the R(s,a) + ymax Qhat(s', a')
             self.target_Q = tf.placeholder(tf.float32, [None], name="target")
 
+            '''
             # Input is 16x13x4
             self.conv1 = tf.layers.conv2d(inputs=self.inputs_,
                                           filters=8,
@@ -66,8 +65,14 @@ class DQNetwork:
                                       units=16,
                                       activation=tf.nn.elu,
                                       name="fc1")
+            '''
 
-            self.output = tf.layers.dense(inputs=self.fc,
+            # Input is 8x4x4
+            self.flatten = tf.layers.flatten(inputs=self.inputs_)
+            self.dense1 = tf.layers.dense(inputs=self.flatten, units=128, activation='relu')
+            self.dense2 = tf.layers.dense(inputs=self.dense1, units=32, activation='relu')
+
+            self.output = tf.layers.dense(inputs=self.dense2,
                                           units=self.action_size,
                                           activation=None)
 
